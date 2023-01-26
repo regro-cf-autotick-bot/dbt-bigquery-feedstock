@@ -21,14 +21,15 @@ requirements:
   run:
     # via Grayskull
     - python >=3.7
-    - dbt-core >=1.3.0,<1.4.dev0
+    - dbt-core >=1.4.0,<1.5.dev0
     - protobuf >=3.13.0,<4
-    - google-cloud-core >=1.3.0,<3
-    - google-cloud-bigquery >=1.25.0,<3
-    - google-api-core >=1.16.0,<3
-    - googleapis-common-protos >=1.6.0,<2
-    - google-cloud-storage >=2.4.0
-    - google-cloud-dataproc >=4.0.3
+    - google-cloud-core >=2.0,<3.dev0
+    - google-cloud-bigquery-core >=3.0,<4.dev0
+    - google-api-core >=2.0,<3.dev0
+    - googleapis-common-protos >=1.6,<2.dev0
+    - google-cloud-storage >=2.4,<3.dev0
+    - google-cloud-dataproc >=5.0,<6.dev0
+    - agate >=1.6.3,<1.7
 
 test:
   imports:
