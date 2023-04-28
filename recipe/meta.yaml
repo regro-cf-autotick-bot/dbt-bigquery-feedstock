@@ -1,5 +1,5 @@
 {% set name = "dbt-bigquery" %}
-{% set version = "1.4.3" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dbt-bigquery-{{ version }}.tar.gz
-  sha256: af85c41cdf7efd71eee9a460f5b51d8c59ca903efbd2c6974d1e159c3e871489
+  sha256: f70e96747fb21854d5452a4fb15a51f40fdab5bffc04b666e9cc6de24347b2e8
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     # via Grayskull
     - python >=3.7
-    - dbt-core >=1.4.0,<1.5.dev0
+    - dbt-core >=1.5.0,<1.6.dev0
     - google-cloud-bigquery-core >=3.0,<4.dev0
     - google-cloud-storage >=2.4,<3.dev0
     - google-cloud-dataproc >=5.0,<6.dev0
@@ -29,8 +29,7 @@ requirements:
 
 test:
   imports:
-    - dbt
-    - dbt.adapters
+    - dbt.adapters.bigquery
   commands:
     - pip check
   requires:
