@@ -21,7 +21,7 @@ requirements:
   run:
     # via Grayskull
     - python >=3.7
-    - dbt-core >=1.4.0,<1.5.dev0
+    - dbt-core >=1.5.0,<1.6.dev0
     - google-cloud-bigquery-core >=3.0,<4.dev0
     - google-cloud-storage >=2.4,<3.dev0
     - google-cloud-dataproc >=5.0,<6.dev0
@@ -29,8 +29,7 @@ requirements:
 
 test:
   imports:
-    - dbt
-    - dbt.adapters
+    - dbt.adapters.bigquery
   commands:
     - pip check
   requires:
