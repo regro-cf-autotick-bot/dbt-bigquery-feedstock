@@ -25,7 +25,6 @@ requirements:
     - google-cloud-bigquery-core >=3.0,<4.dev0
     - google-cloud-storage >=2.4,<3.dev0
     - google-cloud-dataproc >=5.0,<6.dev0
-    - agate >=1.6.3,<1.7.dev0
 
 test:
   imports:
